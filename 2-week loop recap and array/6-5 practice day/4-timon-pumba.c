@@ -2,16 +2,8 @@
 
 int main()
 {
-    int a,b;
-    scanf("%d %d",&a,&b);
-    if(a-b>=0)
-    {
-        printf("%d",a-b);
-    }
-    else
-    {
-        printf("0");
-    }
+    int arrayName[] = {1, 2, 3};
+printf("h-%d", arrayName[3]);
    
     return 0;
 }

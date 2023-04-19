@@ -7,16 +7,16 @@ int main()
     char str[1001];
     scanf("%s",str);
     int len = strlen(str);
-    bool ans=false;
+    bool ans=true;
     for(int i = 0,j=len-1; i < len/2; i++,j--)
     {
         if(str[i] != str[j])
         {
-            continue;
+            ans=false;
         }
         
         else{
-            ans=true;
+            continue;
         }
     }
     if(ans==true)
