@@ -1,13 +1,5 @@
 #include<stdio.h>
 
-int swap(int a,int b)
-{
-  int t=a;
-  a=b;
-  b=t;
-  return a,b;
-}
-
 int main()
 {
     int n;
@@ -21,12 +13,11 @@ int main()
     {
       if(ar[i]==0)
       {
-        int tr=i;
-        for( int j=0;j<tr;j++)
+        for( int j=0,k=i-1;j<i/2;j++,k--)
         {
-          int t=ar[j];
-          ar[j]=ar[j+1];
-          ar[j+1]=t;
+          int temp=ar[j];
+          ar[j]=ar[k];
+          ar[k]=temp;
         }
       }
     }

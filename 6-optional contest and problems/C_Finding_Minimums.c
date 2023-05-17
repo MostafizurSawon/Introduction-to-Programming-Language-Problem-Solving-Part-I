@@ -12,7 +12,7 @@ int main()
     }
 
     int ans=INT_MAX;
-    int loop=(n/k)*k;
+    int loop=(n/k)*k; //6
     for(int i=1;i<=loop;i++)
     {
       if(ar[i-1]<ans)
