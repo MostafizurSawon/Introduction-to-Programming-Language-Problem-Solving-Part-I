@@ -20,16 +20,17 @@ int main()
         if(ar[i]+1 == ar[j])
         {
           count++;
+          break;
         }
       }
-      if(count>0)
-      {
-        c++;
-        count = 0;
-      }
+      // if(count>0)
+      // {
+      //   c++;
+      //   count = 0;
+      // }
     }
 
-    printf("%d", c);
+    printf("%d", count);
    
     return 0;
 }

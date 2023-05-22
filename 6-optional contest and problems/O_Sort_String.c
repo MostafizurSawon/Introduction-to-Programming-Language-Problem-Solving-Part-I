@@ -1,25 +1,26 @@
 #include<stdio.h>
-
 int main()
 {
-    int n;
-    scanf("%d", &n);
-    char s[n+1];
-    scanf("%s",s);
-    
-    for(int i=0; i<n-1; i++)
-    {
-      for(int j=i+1; j<n; j++)
-      {
-        if(s[i]>s[j])
-      {
-        char t=s[i];
-        s[i]=s[j];
-        s[j]=t;
-      }
-      }
-    }
-    printf("%s", s);
-   
-    return 0;
+int n;
+scanf("%d\n", &n);
+int freq[26]={0};
+for(int i=0; i<n; i++)
+{
+char ch;
+scanf("%c", &ch);
+if(ch>96)
+{
+int t=ch-97;
+freq[t]++;
+}
+}
+for(int i=0;i<26;i++)
+{
+while(freq[i]!=0)
+{
+printf("%c",i+97);
+freq[i]--;
+}
+}
+return 0;
 }
